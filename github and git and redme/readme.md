@@ -42,6 +42,37 @@ go to the file `.pub` and copy what is there and add it to the SSH key on the gi
 
 ## Step 4:
 Lastly connect VS with github
-
-
 I think after that it will work
+
+cloning `git clone`+ `ssh`
+
+example 
+`git clone git@github.com:asbernoma/TTP_Boot_Camp.git`
+
+after cloning 
+to push to github
+
+```…or create a new repository on the command line
+echo "# TTP_Boot_Camp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:asbernoma/TTP_Boot_Camp.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin git@github.com:asbernoma/TTP_Boot_Camp.git
+git branch -M main
+git push -u origin main 
+```
+Git pull
+`git pull`, `git fetch && git merege`, `git stash`
+
+
+```
+I donto need it
+Rename your local master branch into main with the following command:
+$ git branch --move master main.
+$ git push --set-upstream origin main.
+$ git branch --all * main remotes/origin/HEAD -> origin/master remotes/origin/main remotes/origin/master.
+$ git push origin --delete master.```
