@@ -1,12 +1,12 @@
 # How To Work With Multiple Github Accounts on a single Machine
 
 - 5 steps to setup:
-
+- you should use git bash
 ## Steps
 - [Step 1](#step-1) : Create SSH keys for all accounts
 - [Step 2](#setp-2) : Add SSH keys to SSH Agent
 - [Step 3](#step-3) :Add SSH public key to the Github
-- [Step 4](#steps-4) :Create a config File and Make Host Entries
+- [Step 4](#step-4) :Create a config File and Make Host Entries
 - [Step 5](#step-5) :Cloning Github repositories using different accounts
 
 ## Step 1:
@@ -29,9 +29,19 @@ OR
 
 - Tip: If you want `ssh-agent` to forget your key after some time, you can configure it to do so by running `ssh-add -t <seconds>`.
 ` cd ~/.ssh `
-## Step 2:
+## Step 2:  this one it doesnot work so I skip it
 ### Add SSH keys to SSH Agent
 Now we have the keys but it cannot be used until we add them to the SSH Agent.
 ```sh
      ssh-add -K ~/.ssh/githubusername
 ```
+
+## Step 3:
+Type `cd ~/.ssh` the `ls`
+go to the file `.pub` and copy what is there and add it to the SSH key on the github.
+
+## Step 4:
+Lastly connect VS with github
+
+
+I think after that it will work
