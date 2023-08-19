@@ -54,12 +54,27 @@ describe(('name of the function returns what it does'), () => {
   - So, we need to make sure that we watch our test fail before we write the code that makes it pass.
 
 # How to install jest
-[DownloadJest](https://jestjs.io/docs/getting-started`)
-[Unitest](https://www.guru99.com/unit-testing-guide.html)
+[DownloadJest](https://jestjs.io/docs/getting-started`) |||
+[Unittest](https://www.guru99.com/unit-testing-guide.html)
 
 
 steps how to do the test and the file :
 1. **Write a test**
 2. **Run the test**(which should fail since the function isn't developed yet)
 3. **Write the function** and make it pass the test
-4. **Refactor the code** to meet standards and run the test again
+4. **Refactor the code** to meet standards and run the test again 
+
+```npm install axios --save```
+
+Lastly If you want to run it once do 
+```
+"scripts": {
+"test": "jest"},
+```
+but if we want it to run per move
+
+```
+"scripts": {
+    "test": "jest --watch"
+  },
+```
